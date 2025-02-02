@@ -10,6 +10,7 @@ This service manages a user's **My List**, allowing them to add, remove, and fet
 
 - [Overview](#overview)
 - [Database Schema Changes](#database-schema-changes)
+- [Optimizations](#optimizations)
 - [API Routes](#api-routes)
 - [Author Info](#author-info)
 
@@ -25,6 +26,16 @@ This service manages a user's **My List**, allowing them to add, remove, and fet
 - **UserWatchHistory Schema**
 
 ---
+
+## Optimizations
+
+- **Added Indexing** on frequently queried fields to improve query performance.
+- **Split User Table** into multiple tables:
+  - `UserWatchHistory` and `UserContentPreference` are placed in separate tables to prevent unnecessary data retrieval when fetching basic user details.
+- **Optimized Queries** to fetch only required fields and avoid unnecessary joins.
+
+---
+
 
 ## API Routes
 
