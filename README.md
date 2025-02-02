@@ -11,8 +11,6 @@ This service manages a user's **My List**, allowing them to add, remove, and fet
 - [Overview](#overview)
 - [Database Schema Changes](#database-schema-changes)
 - [API Routes](#api-routes)
-- [Folder Structure](#folder-structure)
-- [Setup Instructions](#setup-instructions)
 - [Author Info](#author-info)
 
 ---
